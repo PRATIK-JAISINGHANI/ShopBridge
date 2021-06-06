@@ -42,7 +42,10 @@ namespace ShopBridge
 
         private static bool IsAuthenticated(string username, string password)
         {
-            return username.Equals("pratikj.atwork@gmail.com") && password.Equals("123");
+            var context = ApplicationContext.Instance();
+            var user = context.Users.Where(u => u.Email == username).FirstOrDefault();
+            var encryptedSecret = GetEncodedSecret(password);
+            return (context.UserCredentials.Where( uc =>uc.UserId == user.Id && uc.Secret == encryptedSecret).Count() > 0);
         }
 
         private static string GetEncodedSecret(string secret)
