@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge", "ShopBridge\Sh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Tests", "ShopBridge.Tests\ShopBridge.Tests.csproj", "{E7EC78B8-FFA2-4CB9-A7A0-C498D6794671}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Postman-Collection-APIs", "Postman-Collection-APIs", "{540367A0-810D-4423-A980-7F9E73E428C3}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\Desktop\ShopBridge.postman_collection.json = ..\..\..\Desktop\ShopBridge.postman_collection.json
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
