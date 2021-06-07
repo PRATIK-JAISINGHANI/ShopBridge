@@ -1,0 +1,280 @@
+{
+	"info": {
+		"_postman_id": "0d450411-78f3-4440-a1e1-0902218f1e87",
+		"name": "ShopBridge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "SignIn",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"Username\":\"pratikj.atwork@gmail.com\",\r\n    \"Password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Auth/SignIn",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Auth",
+						"SignIn"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Email\":\"pratikj.atwork@gmail.com\",\r\n    \"FirstName\":\"Pratik\",\r\n    \"LastName\":\"Jaisinghani\",\r\n    \"Mobile\":\"8055333533\",\r\n    \"Password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Auth/Register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Auth",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/api/Items",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Bearing\",\r\n    \"Description\":\"Machinery Part\",\r\n    \"ManufacturerName\":\"NBC\",\r\n    \"SupplierName\":\"Sindh Ginning & Hardware Mart\",\r\n    \"CategoryId\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Items/Add",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"Add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Item Variant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Size\":\"6202\",\r\n    \"Price\":199\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Items/aca5fc67-3be5-40d9-a209-448dc001fd72/Variants",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"aca5fc67-3be5-40d9-a209-448dc001fd72",
+						"Variants"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/api/Items/9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item Variant",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/api/Items/Variants/9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"Variants",
+						"9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Bearing\",\r\n    \"Description\":\"Machinery Part\",\r\n    \"ManufacturerName\":\"NBC\",\r\n    \"SupplierName\":\"Sindh Ginning & Hardware Mart\",\r\n    \"CategoryId\":\"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Items/9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Item Variant",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Size\":\"6202\",\r\n    \"Price\":199\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44315/api/Items/Variant/9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items",
+						"Variant",
+						"9a16cca0-28d4-4dd5-bbc1-5e9b2ee1c444"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items with Index ( Ordered by Name )",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44315/api/Items?start=1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44315",
+					"path": [
+						"api",
+						"Items"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
